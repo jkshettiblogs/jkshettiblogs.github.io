@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>My Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-link {
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .nav-link:hover {
+            color: blue;
+        }
+        .gallery {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .gallery-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Gallery</h1>
+    <div class="nav">
+        <a class="nav-link" href="homePage.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+    </div>
+    <div class="gallery">
+        <img class="gallery-image" src="image1.jpg" alt="Image 1">
+        <img class="gallery-image" src="image2.jpg" alt="Image 2">
+        <img class="gallery-image" src="image3.jpg" alt="Image 3">
+        <img class="gallery-image" src="image4.jpg" alt="Image 4">
+        <img class="gallery-image" src="image5.jpg" alt="Image 5">
+    </div>
+</body>
+</html>
